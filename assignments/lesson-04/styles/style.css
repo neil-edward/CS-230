@@ -10,34 +10,39 @@ body {
 }
 
 header  {
-        
+    display: inline-block;
     padding: 10px;
-    font-family: 'Merriweather', serif;
     background-color: #ea6955;
 	font-size: 40px;
 	width: 92%;
 }
 
-header img {
+.logo  {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.headerText {
+	margin-top: 0px;
+	margin-left: 50px;
 	display: inline-block;
 }
 
-header h1 {
-	display: inline-block;
+.headerText h1{
 	color: #55ADB7;
 	font-size: 40;
 }
 
-header h3 {
-	color: #55ADB7;
+header #subHeader h3 {
+	margin-left: 20%;
+	font-size: 15;
 	font-family: 'Work Sans', sans-serif;
-	padding-left: 200px;
-	display: inline-block;
+	color: #55ADB7
+	
 }
 
 #currentCondition {
-	margin-left: 200px;
-	width: 100px;
+	margin-left: 70px;
 	height: 100px;
 	background-color: #55ADB7;
 	display: inline-block; 

@@ -1,48 +1,112 @@
 <!DOCTYPE html>
 <html lang = "en-us">
-  <head>
-      <meta charset="utf-8"> 
-      <title>Your County Weather</title>
-      <meta name="description" content="Weather info for the county">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="Weather info for the county">
+      	<title>Your County Weather</title>
+		
 
-			<link rel="stylesheet" href="styles/style.css">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
-			
-  </head>
-  
-  <body>
-      <header>
-				<img src="image/weather-41-512.png" alt="Plain rainbow" width="128" height="128">
-				<h1>Your County Weather</h1>
-				<h3>Weather that works</h3>
-				<img id="currentCondition" src="image/Sunny-Cloud-512.png" alt="Sun and Clouds" width="100" height="100">
+				<link rel="stylesheet" href="styles/style.css">
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+
+				<style>
 				
 				
-      </header>
+* {
+    font-family: font-family: 'Merriweather', serif;
+}
 
-      <nav>
-          <ul>
-              <li>Home</li>
-            	<li>Preston</li>
-            	<li>Soda Springs</li>
-            	<li>Fish Haven</li>
-            	<li>Storm Center</li>
-            	<li>Gallery</li>                        
-        </ul>
-      </nav>
+body {
+	margin-left: 100px;
+	background-color: #c09989;
+	
+}
 
-      <main>
+header  {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ea6955;
+	font-size: 40px;
+	width: 92%;
+}
 
-      </main>
+.logo  {
+	display: inline-block;
+	margin-left: 20px;
+}
 
-      <article>
+.headerText {
+	margin-top: 0px;
+	margin-left: 50px;
+	display: inline-block;
+}
 
-      </article>
+.headerText h1{
+	color: #55ADB7;
+	font-size: 40;
+}
 
-      <footer>
+header #subHeader h3 {
+	margin-left: 20%;
+	font-size: 15;
+	font-family: 'Work Sans', sans-serif;
+	color: #55ADB7
+	
+}
 
-      </footer>
+#currentCondition {
+	margin-left: 70px;
+	height: 100px;
+	background-color: #55ADB7;
+	display: inline-block; 
+}
+				</style>
+				
+	</head>
+	
+	<body>
+		<header>
+					<div class = "logo">
+						<img src="image/weather-41-512.png" alt="Plain rainbow" width="128" height="128">
+					</div> <!--logo-->
 
-  </body>
+					<div class = "headerText">
+						<h1>Your County Weather</h1>
+						<div id= "subHeader">
+							<h3>Weather that works</h3>
+						</div> <!--subHeader end-->
+					</div> <!--headerText end-->
+
+					<div id="currentCondition">
+						<img  src="image/Sunny-Cloud-512.png" alt="Sun and Clouds" width="100" height="100">
+					</div> <!--current Condition end-->
+					
+		</header>
+
+		<nav>
+			<ul>
+					<li>Home </li>
+					<li>Preston </li>
+					<li>Soda Springs</li>
+					<li>Fish Haven</li>
+					<li>Storm Center</li>
+					<li>Gallery</li>                        
+			</ul>
+		</nav>
+
+		<main>
+
+		</main>
+
+		<article>
+
+		</article>
+
+		<footer>
+
+		</footer>
+
+	</body>
 </html>
