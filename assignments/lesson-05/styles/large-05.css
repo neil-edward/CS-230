@@ -1,0 +1,10 @@
+@media only screen and (min-width: 60em ) {
+ 
+  
+    header, nav, main, article, footer { 
+      margin: 0% 10%;
+      width: 80%;
+    }
+    
+    section.forecast {display: inline-table}
+   }

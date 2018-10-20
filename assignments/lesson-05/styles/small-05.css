@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: #414751;
+}
+
+body {
+	margin-left: 100px;
+
+	font-family:arial;
+	font-size: 16px;
+}
+
+header  {   
+    background-color: #ea6955;
+	max-width: 100%; 
+    margin: 0% 0.5%;
+    width: 99%;
+    float:left
+}
+
+.logo  {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.headerText {
+	margin-top: 0px;
+	margin-left: 50px;
+	display: inline-block;
+}
+
+.headerText h1{
+	color: #55ADB7;
+	font-size: 40;
+}
+
+header #subHeader h3 {
+	margin-left: 20%;
+	font-size: 15;
+	font-family: 'Work Sans', sans-serif;
+	color: #55ADB7
+	
+}
+
+nav {
+	background-color: #568eea;
+}
+
+nav ul {
+	font-size: 20px;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+  }
+
+ul li {
+	color: #414751; 
+    display: inline-block;
+}
+
+main h1 {
+	text-align: center;
+}
+
+.PrestonWeather{
+	margin: 0;
+	
+}
+
+.PrestonWeather.heroContainer{
+	position: relative;
+}
+.PrestonWeather img{
+	border: 1px solid #000;
+	width: 80%;
+	position: absolute;
+	height: 76%;;
+}
+
+section.weathersummary{
+	width: 50%;
+	background-color: #55ADB7;
+	height: auto;
+	position: absolute;
+}
+
+
+section.forecast{
+	padding-top: 30em;
+	display:none;
+	width:100%;
+	margin-top:30px;
+	position: relative;
+	margin-right: 10px;
+}
+section.forecast table {
+    width:100%;
+    text-align:center;
+    border-collapse: collapse;
+    width: 100%;
+}
+section.forecast table td, main .forecast table th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+section.forecast table tr {
+	background-color:#ddd;
+
+}
+section.forecast table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+	background-color:#568eea;
+    color: #000;
+}
+
+
+
+footer p {
+	color: #568eea;
+}
+
