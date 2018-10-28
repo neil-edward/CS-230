@@ -1,0 +1,29 @@
+@media only screen and (min-width: 60em ) {
+ 
+  
+    header, nav, main, article, footer { 
+      margin: 0% 10%;
+      width: 80%;
+    }
+    
+    section.forecast {display: inline-table}
+   }
+
+    nav button {
+      display: hidden;
+    }
+    nav ul li {
+      float: left;
+    }
+
+    nav ul li a {
+      border: none;
+      border-right: 1px solid #000;
+      padding: .6rem 1rem;
+    }
+
+  
+
+   
+
+
