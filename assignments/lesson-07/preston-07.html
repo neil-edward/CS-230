@@ -8,13 +8,14 @@
     <title>Preston Weather</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small-07.css">
-    <link rel="stylesheet" href="styles/
+    <link rel="stylesheet" href="styles/medium-07.css">
     <link rel="stylesheet" href="styles/large-07.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
    
 
 				
@@ -49,7 +50,7 @@
       </ul>
   </nav>
       
-      <main>
+      <main onLoad = "windChill()">
             <h1>Town of Preston</h1>
             <div class="PrestonWeather">
                   <section class="weathersummary">
@@ -65,9 +66,12 @@
                       <p class="value">0 inches</p>
                       <p class="label">Wind Speed:</p>
                       <p class="value">5 mph</p>
-                        </div>
-                    </section>
-                    <figure class = "hero">
+                      <p class="label">Wind Chill:</p>
+                      <div class="value" id="windChillTemp"></div>
+                    </div>
+                  </section>
+                    
+                  <figure class = "hero">
                       <img src="images/preston-hero-large.jpg" alt="Hero in Preston"
                       srcset="images/preston-hero-small.jpg 2x" >
 
@@ -133,6 +137,7 @@
     
   <script>
     currentDate();
+    windChill();
   </script>
 	</body>
 </html>
