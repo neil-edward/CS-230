@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/adjustrating.js"></script>
    
 
 				
@@ -42,79 +42,101 @@
             <button onclick="toggleHam()">&#9776;</button>
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li><a href="preston-08.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li class="active"><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
 
       </ul>
       </nav>
       
       <main>
-            <form>
+            <form action="thankyou.html" id="stormform" target="_self">
 
-                Full Name:<br>
-                <input type = "text" name="fullname">
-                <br>
+                <fieldset>
+                    Full Name:<br>
+                    <input type = "text" name="fullname">
+                    <br>
 
-                Email:<br>
-                <input type = "email" name="email">
-                <br>
 
-                Phone Number:<br>
-                <input type = "tel" name="phone" :required>
-                <br>
 
-                Zip Code:<br>
-                <input type = "number" name="zip" :required>
-                <br>
+                    Email:<br>
+                    <input type = "email" name="email">
+                    <br>
 
-                Date:<br>
-                <input type = "date" name="date">
-                <br>
 
-                Storm Type:<br>
-                <input list="stormtype">
-                <datalist id="stormtype">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist>
-                <br>
 
-                Storm Severity 1-10:<br>
-                <input type="range" name="stormlevel" value="1" min="1" max="10">
-                <br>
+                    Phone Number:<br>
+                    <input type = "tel" name="phone" :required>
+                    <br>
 
-                Storm Region:<br>
-                <select>
-                    <option disabled>Select Region ...</option>
-                    <option value="preston">Preston</option>
-                    <option value="sodasprings">Soda Springs</option>
-                    <option value="fishhaven">Fish Haven</option>
-                </select>
-                <br>
 
-                <form action="/action_page.php">
+
+                    Zip Code:<br>
+                    <input type = "number" name="zip" :required>
+                    <br>
+
+
+
+                    Date:<br>
+                    <input type = "date" name="date" size="100">
+                    <br>
+
+
+
+                    Storm Type:<br>
+                    <input list="stormtype">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    <br>
+
+
+>
+                    Storm Severity 1-10:<br>
+                    <span id="ratingvalue">1</span><br>
+                    <input type="range" name="stormlevel" value="1" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <br>
+
+
+
+                    Storm Region:<br>
+                    <select>
+                        <option disabled>Select Region ...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                    <br>
+                
+
+
                     User in-danger level:<br>
                     <input type="radio" name="dangerlevel" value="dangeryes"> Yes<br>
                     <input type="radio" name="dangerlevel" value="dangermaybe"> Maybe<br>
                     <input type="radio" name="dangerlevel" value="dangerno"> No<br>  
-                </form>
                 <br>
 
-                Additional Information or Comments<br>
-                <textarea rows="4" cols="50">
 
-                </textarea>
-                <br>
+
+                    Additional Information or Comments<br>
+                    <textarea rows="4" cols="40">
+
+                    </textarea>
+                    <br>
+                
                 
                 <input type="submit" value="Submit">
+            </fieldset>
                 
             </form>
+
+            <output form="stormform" name="outthanks" ></output>
 
       </main>
         

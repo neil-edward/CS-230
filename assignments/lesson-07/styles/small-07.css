@@ -104,6 +104,9 @@ section.weathersummary{
 	line-height: 0px;
 }
 
+main form fieldset textarea{
+	width: auto;
+}
 main figure.hero{
 	width: 100%;
 	margin: 0 0 0 0;
