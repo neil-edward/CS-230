@@ -45,8 +45,9 @@
                 <li><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
+                <li class="active"><a href="#">Storm Center</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li class="active"><a href="#"></a></li>
+
       </ul>
       </nav>
       
@@ -55,18 +56,23 @@
 
                 Full Name:<br>
                 <input type = "text" name="fullname">
+                <br>
 
                 Email:<br>
                 <input type = "email" name="email">
+                <br>
 
                 Phone Number:<br>
                 <input type = "tel" name="phone" :required>
+                <br>
 
                 Zip Code:<br>
                 <input type = "number" name="zip" :required>
+                <br>
 
                 Date:<br>
                 <input type = "date" name="date">
+                <br>
 
                 Storm Type:<br>
                 <input list="stormtype">
@@ -77,18 +83,39 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
+                <br>
 
                 Storm Severity 1-10:<br>
                 <input type="range" name="stormlevel" value="1" min="1" max="10">
+                <br>
 
                 Storm Region:<br>
                 <select>
-                    <option>Select Region ...</option>
+                    <option disabled>Select Region ...</option>
                     <option value="preston">Preston</option>
                     <option value="sodasprings">Soda Springs</option>
                     <option value="fishhaven">Fish Haven</option>
                 </select>
+                <br>
+
+                <form action="/action_page.php">
+                    User in-danger level:<br>
+                    <input type="radio" name="dangerlevel" value="dangeryes"> Yes<br>
+                    <input type="radio" name="dangerlevel" value="dangermaybe"> Maybe<br>
+                    <input type="radio" name="dangerlevel" value="dangerno"> No<br>  
+                </form>
+                <br>
+
+                Additional Information or Comments<br>
+                <textarea rows="4" cols="50">
+
+                </textarea>
+                <br>
+                
+                <input type="submit" value="Submit">
+                
             </form>
+
       </main>
         
 
