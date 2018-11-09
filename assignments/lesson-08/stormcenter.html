@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="Weather info for Preston">
+        
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-08.css">
+    <link rel="stylesheet" href="styles/medium-08.css">
+    <link rel="stylesheet" href="styles/large-08.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+   
+
+				
+	</head>
+	
+	<body>
+		<header>
+					<div class = "logo">
+						<img src="images/weather-41-512.png" alt="Plain rainbow" width="128" height="128">
+					</div> <!--logo end-->
+
+					<div class = "headerText">
+						<h1>Your County Weather</h1>
+						<div id= "subHeader">
+							<h3>Weather that works</h3>
+						</div> <!--subHeader end-->
+					</div> <!--headerText end-->
+
+					
+		</header>
+
+
+		<nav>
+            <button onclick="toggleHam()">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li class="active"><a href="#"></a></li>
+      </ul>
+      </nav>
+      
+      <main>
+            <form>
+
+                Full Name:<br>
+                <input type = "text" name="fullname">
+
+                Email:<br>
+                <input type = "email" name="email">
+
+                Phone Number:<br>
+                <input type = "tel" name="phone" :required>
+
+                Zip Code:<br>
+                <input type = "number" name="zip" :required>
+
+                Date:<br>
+                <input type = "date" name="date">
+
+                Storm Type:<br>
+                <input list="stormtype">
+                <datalist id="stormtype">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+                Storm Severity 1-10:<br>
+                <input type="range" name="stormlevel" value="1" min="1" max="10">
+
+                Storm Region:<br>
+                <select>
+                    <option>Select Region ...</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodasprings">Soda Springs</option>
+                    <option value="fishhaven">Fish Haven</option>
+                </select>
+            </form>
+      </main>
+        
+
+
+		
+
+		<footer>
+        <hr>
+        
+          
+            <span id="currentDate">Monday, 22 October 2016</span>
+          
+				<p>©2018 Edward Neil USA</p>
+    </footer>
+    
+    
+  <script>
+    currentDate();
+    windChill();
+  </script>
+	</body>
+</html>
