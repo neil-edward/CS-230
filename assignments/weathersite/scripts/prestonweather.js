@@ -18,9 +18,10 @@ request.send();
     
         document.getElementById("currTown").innerText =  jsonObj.list[pi].name;
         document.getElementById("currCon").innerText =  jsonObj.list[pi].weather[0].main;
-        document.getElementById("currTemp").innerHTML =  jsonObj.list[pi].main.temp;
+        document.getElementById("currTemp").innerHTML =  jsonObj.list[pi].main.temp.toFixed(0);
         document.getElementById("currHum").innerHTML =  jsonObj.list[pi].main.humidity;
         document.getElementById("currWind").innerHTML =  jsonObj.list[pi].wind.speed;
+        document.getElementById("currPer").innerHTML =  jsonObj.list[pi].rain[0];
         document.getElementById("windChillTemp").innerHTML =  windChill(jsonObj.list[pi].main.temp, jsonObj.list[pi].wind.speed);
             
     }

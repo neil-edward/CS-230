@@ -117,34 +117,10 @@ main figure.hero img{
 
 
 section.forecast{
-	padding-top: 1em;
-	display:none;
-	width:100%;
-	margin-top:20px;
-	position: relative;
-	margin-right: 10px;
-}
-section.forecast table {
-    width:100%;
-    text-align:center;
-    border-collapse: collapse;
-    width: 100%;
-}
-section.forecast table td, main .forecast table th {
-    border: 1px solid #ddd;
-    padding: 10px;
-}
-section.forecast table tr {
-	background-color:#ddd;
 
+	border:none;
 }
-section.forecast table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-	background-color:#568eea;
-    color: #000;
-}
+
 
 section {
 	border-style: solid;
