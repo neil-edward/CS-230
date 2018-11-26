@@ -1,0 +1,169 @@
+* {
+	box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: #414751;
+}
+
+body {
+	margin-left: 1em;
+
+	font-family:arial;
+	font-size: 16px;
+}
+
+header  {   
+    background-color: #ea6955;
+	max-width: 100%; 
+    margin: 0% 0.5%;
+    width: 99%;
+    float:left
+}
+
+.logo  {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.headerText {
+	margin-top: 0px;
+	margin-left: 10em;
+	display: inline-block;
+}
+
+.headerText h1{
+	color: rgb(85, 95, 183);
+	font-size: 40;
+}
+
+header #subHeader h3 {
+	margin-left: 20%;
+	font-size: 15;
+	font-family: 'Work Sans', sans-serif;
+	color: rgb(85, 87, 183);
+	
+}
+
+nav button {
+	margin: .2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color: #414751;
+}
+
+nav {
+	background-color: #568eea;
+	font-family: 'Merriweather', serif;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li a {
+	display: block;
+	padding: .8rem 2%;
+	text-decoration: none;
+	color: #414751;
+	border-top: 1px solid #7656ea;
+}
+
+nav ul li.active a {
+	background-color: #7656ea;
+}
+
+nav ul li a:hover{
+	background-color: #7656ea;
+}
+
+nav ul.hide {display: none;}
+
+
+
+main h1 {
+	text-align: center;
+}
+
+.PrestonWeather{
+	margin: 0;
+	
+}
+
+.PrestonWeather.heroContainer{
+	position: relative;
+	
+}
+
+
+section.weathersummary{
+
+	background-color: #55ADB7;
+	position: absolute;
+	line-height: 0px;
+}
+
+main figure.hero{
+	width: 100%;
+	margin: 0 0 0 0;
+	
+}
+
+main figure.hero img{
+	width: 100%;
+}
+
+
+section.forecast{
+	padding-top: 1em;
+	display:none;
+	width:100%;
+	margin-top:20px;
+	position: relative;
+	margin-right: 10px;
+}
+section.forecast table {
+    width:100%;
+    text-align:center;
+    border-collapse: collapse;
+    width: 100%;
+}
+section.forecast table td, main .forecast table th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+section.forecast table tr {
+	background-color:#ddd;
+
+}
+section.forecast table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+	background-color:#568eea;
+    color: #000;
+}
+
+section {
+	border-style: solid;
+	border-color: #000;
+}
+
+section article {
+	width: 33%;
+	float: left;
+  }
+
+  section article ul{
+	margin: 0;
+    padding: 0;
+  }
+
+
+
+footer p {
+	margin-bottom: 0%;
+	color: #568eea;
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="Weather info for Preston">
+        
+    <title>Fish Haven Weather</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script src="scripts/prestonweather.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    
+   
+
+				
+	</head>
+	
+	<body>
+		<header>
+					<div class = "logo">
+						<img src="images/weather-41-512.png" alt="Plain rainbow" width="128" height="128">
+					</div> <!--logo end-->
+
+					<div class = "headerText">
+						<h1>Your County Weather</h1>
+						<div id= "subHeader">
+							<h3>Weather that works</h3>
+						</div> <!--subHeader end-->
+					</div> <!--headerText end-->
+
+					
+		</header>
+
+
+		<nav>
+      <button onclick="toggleHam()">&#9776;</button>
+      <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodasprings.html">Soda Springs</a></li>
+          <li class="active"><a href="#">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+  </nav>
+      
+      <main >
+            <h1>Town of <span id="currTown">Err</span></h1>
+            <div class="PrestonWeather">
+                  <section class="weathersummary">
+                    <h3>Weather Summary</h3>                                     
+                    <div class="weatherdetails">       
+                      <p class="label">Currently:</p>
+                      <p class="value"><span id = "currCon">Sunny</span><span id = "currIcon"></span></p>
+                      <p class="label">Temperature:</p>
+                      <p class="value"><span id = "currTemp">56</span>&deg;F</p> 
+                      <p class="label">Humidity:</p>
+                      <p class="value"><span id = "currHum">69</span>%</p>
+                      <p class="label">Precipitation:</p>
+                      <p class="value"><span id ="currPer">0 </span>inches</p>
+                      <p class="label">Wind Speed:</p>
+                      <p class="value"><span id ="currWind">5</span>MPH</p>
+                      <p class="label">Wind Chill:</p>
+                      <p class="value"><span id ="windChillTemp">55</span>&deg;F</p> 
+                    </div>
+                  </section>
+                    
+                  <figure class = "hero">
+                      <img src="images/preston-hero-large.jpg" alt="Hero in Preston"
+                      srcset="images/preston-hero-small.jpg 2x" >
+
+                    </figure>
+            </div>
+
+            <section class="forecast">
+                    <h3>High Temperature Forecast</h3>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Day</th>
+                          <th>Wed</th>
+                          <th>Thu</th>
+                          <th>Fri</th>
+                          <th>Sat</th>
+                          <th>Sun</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>Forecast</th>
+                          <td>89&deg;F</td>
+                          <td>87&deg;F</td>
+                          <td>78&deg;F</td>
+                          <td>75&deg;F</td>
+                          <td>72&deg;F</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+        </main>
+        
+
+
+		<article>
+            <div class = "articleHeader">
+                <div id = "articleTitle">
+                    <h2>La Le Li Lu Lo</h2>
+                </div> <!--articleTitle end-->
+                <div>
+                    <p>by Jackie Chan</p>
+                </div> <!--articleAuthor end-->               
+            </div> <!--articleHeader end-->
+
+            <div id = "articleImage1">
+
+            </div><!--articleImage1 end-->
+            <p> These boots were made for walking.</p>
+                
+
+		</article>
+
+		<footer>
+        <hr>
+        
+          
+            <span id="currentDate">Monday, 22 October 2016</span>
+          
+        <p>©2018 Edward Neil USA</p>
+        
+        <script src="scripts/prestonweather.js"></script>
+    </footer>
+    
+    
+  <script>
+    currentDate();
+  </script>
+	</body>
+</html>

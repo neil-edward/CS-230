@@ -1,0 +1,45 @@
+@media only screen and (min-width: 64em) {
+  article p.town-article img {
+      width: 29.333%;
+  }
+  .forecast {
+      display: inline;
+      margin: 10px;
+  }
+  header img {
+      width: 120px;
+      height: 100px;
+  }
+  nav {
+      text-align: center;
+  }
+  .navigation.responsive {
+      position: relative;
+  }
+  .navigation.responsive li {
+      background-color: #eee;
+      display: inline;
+      width: 100%;
+      margin: 4px 0;
+  }
+  .navigation.responsive li a {
+      padding: 1rem;
+      text-align: center;
+      display: inline;
+      text-decoration: none;
+  }
+  .navigation.responsive li a:hover {
+      background-color: #ddd;
+  }
+  li {
+      display: inline;
+  }
+  figure img {
+      width: 100%;
+  }
+
+  section article {
+	width: 33%;
+	float: clear;
+  }
+}

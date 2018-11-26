@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="Weather info for Preston">
+        
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/adjustrating.js"></script>
+   
+
+				
+	</head>
+	
+	<body>
+		<header>
+					<div class = "logo">
+						<img src="images/weather-41-512.png" alt="Plain rainbow" width="128" height="128">
+					</div> <!--logo end-->
+
+					<div class = "headerText">
+						<h1>Your County Weather</h1>
+						<div id= "subHeader">
+							<h3>Weather that works</h3>
+						</div> <!--subHeader end-->
+					</div> <!--headerText end-->
+
+					
+		</header>
+
+
+		<nav>
+            <button onclick="toggleHam()">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="active"><a href="#">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+
+      </ul>
+      </nav>
+      
+      <main>
+            <form action="thankyou.html" id="stormform" target="_self">
+
+                <fieldset>
+                    Full Name:<br>
+                    <input type = "text" name="fullname">
+                    <br>
+
+
+
+                    Email:<br>
+                    <input type = "email" name="email">
+                    <br>
+
+
+
+                    Phone Number:<br>
+                    <input type = "tel" name="phone" :required>
+                    <br>
+
+
+
+                    Zip Code:<br>
+                    <input type = "number" name="zip" :required>
+                    <br>
+
+
+
+                    Date:<br>
+                    <input type = "date" name="date" size="100">
+                    <br>
+
+
+
+                    Storm Type:<br>
+                    <input list="stormtype">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    <br>
+
+
+>
+                    Storm Severity 1-10:<br>
+                    <span id="ratingvalue">1</span><br>
+                    <input type="range" name="stormlevel" value="1" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <br>
+
+
+
+                    Storm Region:<br>
+                    <select>
+                        <option disabled>Select Region ...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                    <br>
+                
+
+
+                    User in-danger level:<br>
+                    <input type="radio" name="dangerlevel" value="dangeryes"> Yes<br>
+                    <input type="radio" name="dangerlevel" value="dangermaybe"> Maybe<br>
+                    <input type="radio" name="dangerlevel" value="dangerno"> No<br>  
+                <br>
+
+
+
+                    Additional Information or Comments<br>
+                    <textarea rows="4" cols="40">
+
+                    </textarea>
+                    <br>
+                
+                
+                <input type="submit" value="Submit">
+            </fieldset>
+                
+            </form>
+
+            <output form="stormform" name="outthanks" ></output>
+
+      </main>
+        
+
+
+		
+
+		<footer>
+        <hr>
+        
+          
+            <span id="currentDate">Monday, 22 October 2016</span>
+          
+				<p>©2018 Edward Neil USA</p>
+    </footer>
+    
+    
+  <script>
+    currentDate();
+    windChill();
+  </script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+@media only screen and (min-width: 37.5em) {
+
+    header img {
+        width: 100px;
+        height: 90px;
+    }
+    nav button {
+        display: none;
+    }
+
+
+        .navigation.responsive {
+        position: relative;
+    }
+    .navigation.responsive li {
+        display: block;
+        width: 100%;
+        background-color: #999999;
+        margin: 2px 0;
+    }
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+    .navigation.responsive li a:hover {
+        background-color: #ddd;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    .current {
+        float: left;
+        margin-left: 100px;
+        margin-top: -25px
+    }
+
+    
+   
+
+
+}
