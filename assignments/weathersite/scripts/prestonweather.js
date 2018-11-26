@@ -1,6 +1,6 @@
 
 var request = new XMLHttpRequest();
-request.open('GET', 'http://api.openweathermap.org/data/2.5/group?id=5604473,5585010,5607916&units=imperial&appid=3db6051d8878aed3edde73d9c3b3c18d');
+request.open('GET', 'https://api.openweathermap.org/data/2.5/group?id=5604473,5585010,5607916&units=imperial&appid=3db6051d8878aed3edde73d9c3b3c18d');
 request.send();
 
 
