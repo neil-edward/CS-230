@@ -80,7 +80,10 @@ nav ul li a:hover{
 
 nav ul.hide {display: none;}
 
-
+main { 
+	width: 99%;
+	
+}
 
 main h1 {
 	text-align: center;
@@ -94,16 +97,19 @@ main h1 {
 
 .PrestonWeather.heroContainer{
 	position: relative;
+	min-height: 50%;
 	
 }
 
 
 section.weathersummary{
-	font-size: 2em;
+	font-size: 2.5vw;
 	background-color: #55ADB7;
 	position: absolute;
 	line-height: 0px;
 	padding-bottom: 0.5em;
+	max-width: 99%;
+	max-height: 99%;
 }
 
 main figure.hero{
@@ -112,7 +118,7 @@ main figure.hero{
 }
 
 main figure.hero img{
-	width: 100%;
+	width: 99%;
 }
 
 
