@@ -6,10 +6,11 @@
 		<meta name="description" content="Weather info for Preston">
         
     <title>Fish Haven Weather</title>
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/grid.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,8 +24,8 @@
 				
 	</head>
 	
-	<body>
-		<header>
+	<body class = "container">
+		<header class = "item-a">
 					<div class = "logo">
 						<img src="images/weather-41-512.png" alt="Plain rainbow" width="128" height="128">
 					</div> <!--logo end-->
@@ -40,7 +41,7 @@
 		</header>
 
 
-		<nav>
+		<nav class = "item-b">
       <button onclick="toggleHam()">&#9776;</button>
       <ul class="navigation">
           <li><a href="index.html">Home</a></li>
@@ -52,14 +53,16 @@
       </ul>
   </nav>
       
-      <main >
-            <h1>Town of <span id="currTown">Err</span></h1>
+      <main class="item-c">
+            <h1>Town of Fish Haven</h1>
+            <h2>Current Weather</h2>
+            <span id = "currIcon"></span>
             <div class="PrestonWeather">
                   <section class="weathersummary">
                     <h3>Weather Summary</h3>                                     
                     <div class="weatherdetails">       
                       <p class="label">Currently:</p>
-                      <p class="value"><span id = "currCon">Sunny</span><span id = "currIcon"></span></p>
+                      <p class="value"><span id = "currCon">Sunny</span></p>
                       <p class="label">Temperature:</p>
                       <p class="value"><span id = "currTemp">56</span>&deg;F</p> 
                       <p class="label">Humidity:</p>
@@ -74,8 +77,7 @@
                   </section>
                     
                   <figure class = "hero">
-                      <img src="images/preston-hero-large.jpg" alt="Hero in Preston"
-                      srcset="images/preston-hero-small.jpg 2x" >
+                      <img src="images/fishahven.jpg" alt="Beautiful Lake">
 
                     </figure>
             </div>
@@ -104,12 +106,12 @@
                         </tr>
                       </tbody>
                     </table>
-                  </section>
+              </section>
         </main>
         
 
 
-		<article>
+		<article class="item-d">
             <div class = "articleHeader">
                 <div id = "articleTitle">
                     <h2>La Le Li Lu Lo</h2>
@@ -127,7 +129,7 @@
 
 		</article>
 
-		<footer>
+		<footer class="item-e">
         <hr>
         
           

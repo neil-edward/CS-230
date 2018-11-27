@@ -72,4 +72,10 @@ section.forecast table th {
 	width: 33%;
 	float: clear;
   }
+
+  #currIcon{
+    display: inline-block;
+    width:100%;
+    vertical-align: middle;
+}
 }

@@ -1,8 +1,9 @@
-.grid-container {
+@media only screen and (min-width: 64em) {
+  .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-	background-color:#55ADB7;
-    padding: 10px;
+	  background-color:#55ADB7;
+    padding: 5px;
   }
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -10,4 +11,35 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
+
+    overflow: hidden;
+  }
+}
+
+  .container {
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-rows: [header] auto [nav] auto [main] auto [article] auto [footer] auto;
+    grid-template-areas: 
+    ". header ."
+    ". nav ."
+    ". main ."
+    ". article ."
+    ". footer footer";
+  }
+
+  .item-a {
+    grid-area: header;
+  }
+  .item-b {
+    grid-area: nav;
+  }
+  .item-c {
+    grid-area: main;
+  }
+  .item-d {
+    grid-area: article;
+  }
+  .item-e {
+    grid-area: footer;
   }
