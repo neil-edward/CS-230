@@ -8,6 +8,9 @@ request.send();
     request.onload=function() {
         var jsonObj = JSON.parse(request.responseText);
         var pi = 0;
+
+
+        //Set page index
         if(document.URL.indexOf("fishhaven.html") >= 0)
             { pi = 1; }
         else if (document.URL.indexOf("sodasprings.html") >= 0)
@@ -17,6 +20,9 @@ request.send();
 
 
     
+        if(document.URL.indexOf("fishhaven.html") >= 0)
+            { document.getElementById("currTown").innerText = "Fish Haven";}
+        else
         document.getElementById("currTown").innerText =  jsonObj.list[pi].name;
         document.getElementById("currCon").innerText =  jsonObj.list[pi].weather[0].main;
         //set icon
