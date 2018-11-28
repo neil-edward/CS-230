@@ -19,7 +19,9 @@ request.send();
             { pi = 0; }
 
 
+        
     
+        document.getElementById("windChillTemp").innerHTML = windChill(jsonObj.list[pi].main.temp, jsonObj.list[pi].wind.speed);
         if(document.URL.indexOf("fishhaven.html") >= 0)
             { document.getElementById("currTown").innerText = "Fish Haven";}
         else
@@ -32,7 +34,7 @@ request.send();
         document.getElementById("currHum").innerHTML =  jsonObj.list[pi].main.humidity;
         document.getElementById("currWind").innerHTML =  jsonObj.list[pi].wind.speed;
         document.getElementById("currPer").innerHTML =  jsonObj.list[pi].rain[0];
-        document.getElementById("windChillTemp").innerHTML =  windChill(jsonObj.list[pi].main.temp, jsonObj.list[pi].wind.speed);
+        
             
     }
     
