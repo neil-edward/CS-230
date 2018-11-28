@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="Gallery">
+        
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-09.css">
+    <link rel="stylesheet" href="styles/medium-09.css">
+    <link rel="stylesheet" href="styles/larges-09.css">
+    <link rel="stylesheet" href="styles/grid.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+   
+
+				
+	</head>
+	
+	<body>
+		<header>
+					<div class = "logo">
+						<img src="images/weather-41-512.png" alt="Plain rainbow" width="128" height="128">
+					</div> <!--logo end-->
+
+					<div class = "headerText">
+						<h1>Your County Weather</h1>
+						<div id= "subHeader">
+							<h3>Weather that works</h3>
+						</div> <!--subHeader end-->
+					</div> <!--headerText end-->
+
+					
+		</header>
+
+
+		<nav>
+      <button onclick="toggleHam()">&#9776;</button>
+      <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li class="active"><a href="#">Gallery</a></li>
+      </ul>
+  </nav>
+      
+      <main>
+          <div class= "grid-container">
+            <figure class="grid-item">
+                <figcaption>
+                    Clear
+                </figcaption>
+                <img src="images/clear.jpeg" alt="Clear" width="500" height="300">
+            </figure>
+
+            <figure class="grid-item">
+                <figcaption>
+                    Clouds
+                </figcaption>
+                <img src="images/cloudy.jpeg" alt="Clouds" width="500" height="300">
+            </figure>
+
+            <figure class="grid-item">
+                <figcaption>
+                    Rain
+                </figcaption>
+                <img src="images/rain.jpeg" alt="Rain" width="500" height="300">
+            </figure>
+
+            <figure class="grid-item">
+                <figcaption>
+                    Snow
+                </figcaption>
+                <img src="images/snow.jpeg" alt="Snow" width="500" height="300">
+            </figure>
+
+            <figure class="grid-item">
+                <figcaption>
+                    Storm
+                </figcaption>
+                <img src="images/storm1.jpeg" alt="Storm" width="500" height="300">
+            </figure>
+
+            <figure class="grid-item">
+                <figcaption>
+                    Storm
+                </figcaption>
+                <img src="images/storm2.jpeg" alt="Big Storm" width="500" height="300">
+            </figure>
+        </div>
+      </main>
+
+        
+
+
+
+		<footer>
+        <hr>
+        
+          
+            <span id="currentDate">Monday, 22 October 2016</span>
+          
+				<p>©2018 Edward Neil USA</p>
+    </footer>
+    
+    
+  <script>
+    currentDate();
+  </script>
+	</body>
+</html>

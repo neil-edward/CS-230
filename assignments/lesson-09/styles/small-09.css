@@ -5,8 +5,8 @@
 }
 
 body {
-	margin-left: 1em;
-
+	margin-left: 2em;
+	margin-right: 2em;
 	font-family:arial;
 	font-size: 16px;
 }
@@ -14,29 +14,32 @@ body {
 header  {   
     background-color: #ea6955;
 	max-width: 100%; 
-    margin: 0% 0.5%;
+    margin: 0% 0%;
     width: 99%;
-    float:left
+	text-align: center;
 }
 
 .logo  {
-	display: inline-block;
-	margin-left: 20px;
+	float: left;
+	
+	padding-left: 20px;
 }
 
 .headerText {
+	margin-right: 200px;
 	margin-top: 0px;
-	margin-left: 10em;
 	display: inline-block;
+	padding-left:50px;
 }
 
 .headerText h1{
 	color: rgb(85, 95, 183);
 	font-size: 40;
+	
 }
 
 header #subHeader h3 {
-	margin-left: 20%;
+	
 	font-size: 15;
 	font-family: 'Work Sans', sans-serif;
 	color: rgb(85, 87, 183);
@@ -52,6 +55,7 @@ nav button {
 }
 
 nav {
+	width: 99%;
 	background-color: #568eea;
 	font-family: 'Merriweather', serif;
 }
@@ -80,79 +84,93 @@ nav ul li a:hover{
 
 nav ul.hide {display: none;}
 
-
+main { 
+	width: 99%;
+}
 
 main h1 {
 	text-align: center;
 }
 
+main h2 {
+	text-align: center;
+}
+
+#currIcon{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
 .PrestonWeather{
 	margin: 0;
+	width:99%;
 	
 }
 
 .PrestonWeather.heroContainer{
 	position: relative;
+	min-height: 50%;
 	
 }
 
 
 section.weathersummary{
-
+	font-size: 2.5vw;
 	background-color: #55ADB7;
 	position: absolute;
 	line-height: 0px;
+	padding-bottom: 0.5em;
+	max-width: 33%;
+	max-height: 99%;
+	border: 2px #568eea solid ;
 }
 
+.grid-container {
+    
+	background-color:#55ADB7;
+    padding: 5px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+
+
+
 main figure.hero{
-	width: 100%;
 	margin: 0 0 0 0;
 	
 }
 
 main figure.hero img{
-	width: 100%;
+	width: 99%;
 }
 
 
 section.forecast{
-	padding-top: 1em;
-	display:none;
-	width:100%;
-	margin-top:20px;
-	position: relative;
-	margin-right: 10px;
-}
-section.forecast table {
-    width:100%;
-    text-align:center;
-    border-collapse: collapse;
-    width: 100%;
-}
-section.forecast table td, main .forecast table th {
-    border: 1px solid #ddd;
-    padding: 10px;
-}
-section.forecast table tr {
-	background-color:#ddd;
 
+	border:none;
 }
-section.forecast table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-	background-color:#568eea;
-    color: #000;
-}
+
 
 section {
-	border-style: solid;
-	border-color: #000;
+	width: 99%;
+	display:inline-block
 }
 
 section article {
-	width: 33%;
+	font-size: 1.2vw;
+	width: 30%;
 	float: left;
+	margin-right: 3px
+	
+	
   }
 
   section article ul{
@@ -160,10 +178,11 @@ section article {
     padding: 0;
   }
 
-
+footer {
+	width: 99%;
+}
 
 footer p {
 	margin-bottom: 0%;
 	color: #568eea;
 }
-
