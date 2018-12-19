@@ -1,3 +1,6 @@
+body {
+	margin: 0;
+}
 header, nav, footer {
     margin: 1em;
 }
@@ -42,15 +45,21 @@ nav ul li a:hover{
 	background-color: #c6d73f;
 }
 
-main #slideContainer{
+main .slideContainer{
 	background: #79c049;
-	margin: 0;
 	text-align: center;
 }
 
-
 main .mySlides {
 	display:none;
+
+}
+
+section{
+	text-align: center;
+	background: #a7d6d9;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
 .templeCard {
@@ -60,10 +69,7 @@ main .mySlides {
 	padding: 1em;
 }
 
-section{
-	text-align: center;
-	background: #a7d6d9;
-}
+
 
 .weather {
 	display: inline-block;
