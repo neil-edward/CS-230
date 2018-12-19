@@ -1,0 +1,51 @@
+header, nav, footer {
+    margin: 1em;
+}
+
+header {
+	font-family: 'Merriweather', serif;
+	display: inline;
+	font-size: 30px;
+	color: #79c049;
+	text-align: center;
+	align-content: center;
+}
+
+header img {
+	text-align: center;
+}
+
+nav {
+	background-color: #79c049;
+	font-family: 'Merriweather', serif;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li a {
+	display: block;
+	padding: .8rem 2%;
+	text-decoration: none;
+	color: #414751;
+	border-top: 1px solid #7656ea;
+}
+
+nav ul li.active a {
+	background-color: #a7d6d9;
+}
+
+nav ul li a:hover{
+	background-color: #c6d73f;
+}
+
+main {
+	margin:0; }
+
+
+main .mySlides {
+	display:none;
+}
