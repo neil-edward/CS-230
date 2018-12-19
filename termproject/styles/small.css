@@ -42,8 +42,11 @@ nav ul li a:hover{
 	background-color: #c6d73f;
 }
 
-main {
-	margin:0; }
+main #slideContainer{
+	background: #79c049;
+	margin: 0;
+	text-align: center;
+}
 
 
 main .mySlides {
