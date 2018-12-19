@@ -1,6 +1,4 @@
-body {
-	margin: 0;
-}
+
 header, nav, footer {
     margin: 1em;
 }
@@ -51,8 +49,9 @@ main .slideContainer{
 }
 
 main .mySlides {
+	background: #79c049;
 	display:none;
-
+	text-align: center;
 }
 
 section{
