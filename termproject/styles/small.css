@@ -49,3 +49,27 @@ main {
 main .mySlides {
 	display:none;
 }
+
+.templeCard {
+	background: #79c049;
+	display: inline-block;
+	text-align: center;
+	padding: 1em;
+}
+
+section{
+	text-align: center;
+	background: #a7d6d9;
+}
+
+.weather {
+	display: inline-block;
+    
+}
+.templeInfo {
+	display: inline-block;
+	padding-left: 2em;
+    
+    
+}
+
