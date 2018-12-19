@@ -44,12 +44,12 @@ nav ul li a:hover{
 }
 
 main .slideContainer{
-	background: #79c049;
+	background: #c6d73f;
 	
 }
 
 main .mySlides {
-	background: #79c049;
+	background: #c6d73f;
 	display:none;
 	display: block;
   	margin-left: auto;
