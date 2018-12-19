@@ -56,8 +56,9 @@ nav button {
 
 nav {
 	width: 99%;
-	background-color: #568eea;
+	background-color: #79c049;
 	font-family: 'Merriweather', serif;
+	display: inline;
 }
 
 nav ul {
@@ -75,7 +76,7 @@ nav ul li a {
 }
 
 nav ul li.active a {
-	background-color: #7656ea;
+	background-color: #028e3e;
 }
 
 nav ul li a:hover{
