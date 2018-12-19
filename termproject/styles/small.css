@@ -51,7 +51,9 @@ main .slideContainer{
 main .mySlides {
 	background: #79c049;
 	display:none;
-	
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
 }
 
 section{
