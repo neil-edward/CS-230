@@ -45,13 +45,13 @@ nav ul li a:hover{
 
 main .slideContainer{
 	background: #79c049;
-	text-align: center;
+	
 }
 
 main .mySlides {
 	background: #79c049;
 	display:none;
-	text-align: center;
+	
 }
 
 section{
