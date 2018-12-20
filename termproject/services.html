@@ -11,7 +11,7 @@
 
         
 
-        <title>Services - Temple Inn & Suites</title>
+        <title>Reception - Services - Temple Inn & Suites</title>
 
         
   </head>
@@ -23,15 +23,29 @@
         </header>
 
         <nav>
-            <ul class="navigation">
+                <ul class="navigation">
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="temples.html">Temples</a></li>
+                    <div class="dropdown1">
+                        <li class="subNav1"><a href="temples.html">Temples</a></li>
+                        <div class="dropdown-content1">
+                            <a href="inditemple.html">Indianapolis Temple</a>
+                            <a href="idahotemple.html">Idaho Falls Temple</a>
+                            <a href="DCtemple.html">Washington DC Temple</a>
+                            <a href="brigtemple.html">Brigham City Temple</a>
+                        </div>
+                    </div>
                     <li><a href="reservation.html">Reservation</a></li>
-                    <li class="active"><a href="#">Services</a></li>
-                    <!--Two hidden menu's when services is selected. Click to go to services page, hover to open menu for reception + missionaries-->
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-        </nav>
+                    <div class="dropdown1">
+                        <li class="subNav1"><a href="services.html">Services</a></li>
+                            <div class="dropdown-content1">
+                                <a class="active" href="#">Reception</a>
+                                <a  href="services.html">Full-Time Missionaries</a>
+                            </div>
+                    </div>
+                        <li><a href="contact.html">Contact</a></li>
+                        
+                    </ul>
+            </nav>
 
         <main>
 
@@ -45,10 +59,6 @@
             </div>
 
             <div class="services">
-
-                <div id="serviceMissionaries">
-                    <h3>Learn more about temples</h3>
-                </div>
 
                 <div id="serviceReception">
                     <h3>Your Wedding Here</h3>

@@ -22,22 +22,65 @@ nav {
 }
 
 nav ul {
-	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	list-style: none;
+	
 }
+
+nav ul li {
+	float: left;
+	text-align: center;
+	border-right: 1px solid #bbb;
+		
+}
+
 
 nav ul li a {
 	display: block;
-	padding: .8rem 2%;
+	padding: 8px;
 	text-decoration: none;
 	color: #414751;
-	border-top: 1px solid #7656ea;
+	
 }
 
 nav ul li.active a {
 	background-color: #a7d6d9;
 }
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content1 a:hover {
+	background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown-content1 
+{display: block;
+}
+
+.dropdown1:hover .subNav1 {
+	background-color: #3e8e41;
+}
+
 
 nav ul li a:hover{
 	background-color: #c6d73f;
@@ -63,11 +106,14 @@ section{
 	padding-top: 1em;
 }
 
+
+
 .templeCard {
 	background: #79c049;
 	display: inline-block;
 	text-align: center;
 	padding: 1em;
+	min-width: 300px;
 }
 
 
