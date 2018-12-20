@@ -70,9 +70,16 @@
                     <br>
 
 
-
                     Phone Number:<br>
                     <input type = "tel" name="phone" required>
+                    <br>
+
+                    Zip Code:<br>
+                    <input type = "number" name="zip" required>
+                    <br>
+
+                    County (Optional):<br>
+                    <input type = "text" name="country">
                     <br>
      
 
@@ -84,6 +91,16 @@
                     <input type = "date" name="date" size="100">
                     <br>
 
+                    Room Type:<br>
+                    <input list="roomtype">
+                    <datalist id="roomtype">
+                        <option value="Queen">
+                        <option value="Two Queens">
+                        <option value="King">
+                        <option value="Junior Suite">
+                        <option value="Suite">
+                    </datalist>
+                    <br>
 
                     Desired Location<br>
                     <select>
@@ -93,6 +110,13 @@
                         <option value="washington dc">Washinton DC</option>
                         <option value="brigham city">Brigham City</option>
                     </select>
+                    <br>
+                    
+
+                    Special Accomedations Required<br>
+                    <textarea rows="4" cols="40">
+
+                    </textarea>
                     <br>
                     <br>
                 
